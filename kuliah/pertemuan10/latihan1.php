@@ -23,7 +23,8 @@
         </tr>
         <tr>
             <td>1</td>
-            <td><img src="img/1.jpg"></td>
+            <td><img src="img/1.jpg" width="60px"></td>
+            <td>01111640000056</td>
             <td>Nurul Mufidah</td>
             <td>nurulmufidah231298@gmail.com</td>
             <td>Fisika</td>
