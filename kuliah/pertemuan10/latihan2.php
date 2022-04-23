@@ -1,23 +1,6 @@
 <?php
-//koneksi ke database
-$conn = mysqli_connect('localhost', 'root', '', 'kuliahwebunpas');
-
-//query
-$result = mysqli_query($conn, "SELECT * FROM mahasiswa");
-
-
-//ubah data dalam array
-// $row = mysqli_fetch_row($result); --->array numerik, indeksnya 0
-// $row = mysqli_fetch_assoc($result); --->array assosiatif, indek sesuai key
-// $row = mysqli_fetch_array($result); --->keduanya
-$rows = [];
-while ($row = mysqli_fetch_assoc($result)) {
-    $rows[] = $row;
-}
-
-//tampung ke variabel
-$mahasiswa = $rows;
-
+require 'functions.php';
+$mahasiswa = query("SELECT * FROM mahasiswa");
 ?>
 <!DOCTYPE html>
 <html lang="en">
